@@ -145,25 +145,25 @@ public class Main {
         }
     }
 
-    public static boolean ifFileExists(String path, String name) {
-        File folder = new File(path);
-
-        File[] files = folder.listFiles();
-
-        for(File file : files) {
-            if(file.isFile()){
-                if(file.getName().startsWith(name)) {
-
-                    System.out.println(file.getName() + " is in the folder");
-                }else {
-                    System.out.println("There is no such file in the folder");
-                }
-            }else if(file.isDirectory()) {
-                //System.out.println(file.getName().endsWith(ext));
-                printFoldersAndFiles(file.getAbsolutePath(), name);
-            }
-        }
-    }
+//    public static boolean ifFileExists(String path, String name) {
+//        File folder = new File(path);
+//
+//        File[] files = folder.listFiles();
+//
+//        for(File file : files) {
+//            if(file.isFile()){
+//                if(file.getName().startsWith(name)) {
+//
+//                    System.out.println(file.getName() + " is in the folder");
+//                }else {
+//                    System.out.println("There is no such file in the folder");
+//                }
+//            }else if(file.isDirectory()) {
+//                //System.out.println(file.getName().endsWith(ext));
+//                printFoldersAndFiles(file.getAbsolutePath(), name);
+//            }
+//        }
+//    }
 
     //Counts lines number in a file provided through the path
     public static void countLinesInFile(String fileName) {
